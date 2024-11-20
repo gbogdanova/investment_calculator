@@ -1,12 +1,13 @@
 import Header from "./components/Header"
+import UserInput from "./components/UserInput"
+
 
 function App() {
   return (
     <>
-      <Header/>
-    <h2>React Investment Calculator</h2>
+      <Header />
+      <UserInput />
     </>
-    
   )
 }
 
