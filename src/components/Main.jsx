@@ -10,6 +10,7 @@ export default function Main (){
     expectedReturn: 5,
     duration: 10,
   });
+  const isInputValid = userInput.duration >= 1;
 
   function handleUserInput(inputIdentifier, newValue){
     setUserInput( prevInput => {
@@ -22,7 +23,8 @@ export default function Main (){
   return (
     <main>
       <UserInput userInput={userInput} onChange={handleUserInput}/>
-      <Resalts userInput={userInput}/>
+      {!isInputValid && <p className="center">Please, enter a valid duration.</p>}
+      {isInputValid && <Resalts userInput={userInput}/>}
     </main>
   )
 }
