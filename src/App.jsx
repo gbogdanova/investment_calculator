@@ -1,12 +1,12 @@
 import Header from "./components/Header"
-import UserInput from "./components/UserInput"
+import Main from "./components/Main"
 
 
 function App() {
   return (
     <>
       <Header />
-      <UserInput />
+      <Main />
     </>
   )
 }
